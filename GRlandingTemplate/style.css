@@ -1,0 +1,89 @@
+/*-----------------------------
+    CUSTOM
+-----------------------------*/
+
+div[data-editable="text"] ul,
+div[data-editable="text"] ol {
+    padding-left: 28px;
+}
+
+div[data-editable="text"] ol li {
+    margin: 15px 0;
+}
+
+div[data-editable="text"] ul li {
+    margin: 10px 0;
+}
+
+/* [ Base text ] */
+div.text-content,
+div[data-editable="webform"] label,
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select,
+div[data-editable="webformNew"] label,
+div[data-editable="webformNew"] input[type="text"],
+div[data-editable="webformNew"] textarea,
+div[data-editable="webformNew"] select {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    color: rgb(86,86,86);
+}
+
+/* [ Webform text ] */
+div[data-editable="webform"] label,
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select,
+div[data-editable="webformNew"] label,
+div[data-editable="webformNew"] input[type="text"],
+div[data-editable="webformNew"] textarea,
+div[data-editable="webformNew"] select {
+
+}
+
+/* [ Webform inputs ] */
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select,
+div[data-editable="webformNew"] input[type="text"],
+div[data-editable="webformNew"] textarea,
+div[data-editable="webformNew"] select {
+
+}
+
+/* [ Button container ] */
+div[data-editable="button"],
+div[data-editable="webinarButton"],
+div[data-editable="webform"] button,
+div[data-editable="webformNewButton"] button {
+    border-radius: 6px;
+    background-color: rgba(8, 172, 31, 1);
+    background-image: linear-gradient(rgba(10, 185, 34, 1), rgba(5, 146, 23, 1));
+    box-shadow: rgba(7, 129, 22, 1) 0 10px 0 0;
+}
+
+/* [ Button text ] */
+div[data-editable="button"] button,
+div[data-editable="webinarButton"] button,
+div[data-editable="webform"] button,
+div[data-editable="webformNewButton"] button {
+    font-family:'Alfa Slab One', serif;
+    font-size: 29px;
+    color: #fff;
+}
+
+/* [ Button :hover ] */
+div[data-editable="button"].hover,
+div[data-editable="webinarButton"].hover,
+div[data-editable="webform"] div[data-type="submit"].hover button,
+[data-editable="webformNewButton"].hover button {
+    background-color: rgba(8, 172, 31, .9);
+    background-image: linear-gradient(rgba(10, 185, 34, .9), rgba(5, 146, 23, .9));
+}
+
+div[data-editable="button"].hover button,
+div[data-editable="webinarButton"].hover button,
+div[data-editable="webform"] div[data-type="submit"].hover button,
+[data-editable="webformNewButton"].hover button {
+    color: #fff;
+}

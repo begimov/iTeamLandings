@@ -1,0 +1,112 @@
+/* CUSTOM */
+div.col-md-2, div.col-md-10, div.col-md-6, div.col-md-12, div.col-md-4, div.col-md-7, div.col-md-5 {
+  margin: 20px 0 20px 0;
+}
+
+div.col-md-10 {
+  margin: 25px 0 20px 0;
+}
+
+.features {
+  padding: 10px 0 0 0;
+}
+
+.morelineheight {
+  line-height: 1.5 !important;
+}
+
+/* BOOTSTRAP MODS */
+h1 {
+  color: #870100 !important;
+}
+
+a {
+  color: #870100 !important;
+}
+
+a.btn {
+  color: #fff !important;
+}
+
+.panel {
+    margin-bottom: 0px !important;
+    background: #ededed !important;
+}
+
+.thumbnail {
+    margin-bottom: 0px !important;
+    background: #ededed !important;
+    min-height: 620px !important;
+}
+
+.btn-default {
+  background-color: #555 !important;
+  border-color: #555 !important;
+  color: #fff !important;
+}
+
+.btn-danger {
+  background-color: #870100 !important;
+  border-color: #870100 !important;
+}
+
+.btn-lg {
+  padding: 10px 30px 10px 30px !important;
+}
+
+/* CUSTOMIZE THE CAROUSEL */
+.carousel {
+  height: 380px;
+}
+
+.carousel-caption {
+  top: 0;
+  bottom: auto;
+  z-index: 10;
+  color: #3a3a3a !important;
+  text-shadow: none !important;
+}
+
+.carousel .item {
+  height: 380px;
+}
+
+.glyphicon.glyphicon-chevron-right, .glyphicon.glyphicon-chevron-left {
+  color: #3a3a3a;
+  text-shadow: none !important;
+}
+
+.carousel-indicators li {
+  opacity: 0.5;
+  background: #3a3a3a !important;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .carousel {
+    height: 380px;
+  }
+  .carousel .item {
+    height: 380px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .carousel {
+    height: 480px;
+  }
+  .carousel .item {
+    height: 480px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .carousel {
+    height: 580px;
+  }
+  .carousel .item {
+    height: 580px;
+  }
+}

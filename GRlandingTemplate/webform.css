@@ -1,0 +1,460 @@
+/*----------------------------- CORE WEBFORM -----------------------------*/
+div[data-editable="webform"] {
+    position: absolute;
+}
+
+div[data-editable="webform"] label,
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] button,
+div[data-editable="webform"] select {
+    margin: 0;
+    display: inline;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* text handling */
+div[data-editable="webform"] label,
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    color: #a1a9ad;
+    text-align: left;
+    font-weight: normal;
+    font-style: normal;
+    cursor: pointer;
+}
+
+div[data-editable="webform"] div.label {
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+div[data-editable="webform"] div.label label {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/*------------------------------------*\
+    CHECKBOX | RADIO LIST
+\*------------------------------------*/
+div[data-editable="webform"] div:not(.label) > label {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+div[data-editable="webform"] input[type="checkbox"] {
+    position: absolute;
+    margin-left: -20px;
+}
+
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] button,
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select {
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    border: 3px solid rgb(236, 240, 242);
+    background: rgb(255, 255, 255);
+    border-radius: 0;
+    font-style: normal;
+}
+
+div[data-editable="webform"] textarea {
+    resize: none;
+}
+
+div[data-editable="webform"] select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+        -ms-appearance: none;
+}
+
+div[data-editable="webform"] div.select-one::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    top: -webkit-calc(50% - 2px);
+    top: calc(50% - 2px);
+    right: 10px;
+    display: inline-block;
+    border-color: #696969 transparent transparent transparent;
+    border-style: solid;
+    border-width: 6px;
+}
+
+div[data-editable="webform"] form,
+div[data-editable="webform"] .wf-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+div[data-editable="webform"] .wf-item {
+    position: relative;
+    width: 100%;
+}
+
+div[data-editable="webform"] .wf-item .wf-item-pos {
+    position: absolute;
+    left: 0;
+
+    min-width: 25px;
+}
+
+div[data-editable="webform"] .wf-item .wf-item-pos > div {
+    position: relative;
+    width: 100%;
+}
+
+div[data-editable="webform"] .wf-item.type-inline .wf-item-pos > div {
+    float: left;
+    width: auto;
+}
+
+div[data-editable="webform"] .wf-item.type-placeholder .wf-item-pos div.label {
+    position: absolute;
+    z-index: 10;
+    color: #ccc;
+}
+
+div[data-editable="webform"] .wf-item .wf-item-pos > div label {
+    display: block;
+    max-width: 100%;
+    text-align: left;
+    word-wrap: normal;
+}
+
+div[data-editable="webform"] .wf-item.type-placeholder .wf-item-pos > div label {
+    text-align: left;
+    line-height: 1 !important;
+    width: 100% !important;
+    white-space: nowrap;
+}
+
+div.field-text-edit-on [data-type="text"] input {
+    outline: 1px solid #c00;
+}
+
+div.label-text-edit-on [data-type="text"] label {
+    outline: 1px solid #c00;
+}
+
+div.field-text-edit-on [data-type="text"] div.edit-on input,
+div.label-text-edit-on [data-type="text"] div.edit-on label {
+    outline: none !important;
+}
+
+
+/*-----------------------------
+    DEFAULT BUTTON
+-----------------------------*/
+
+div[data-editable="webform"] button {
+    padding: 0;
+    border: none;
+    border-radius: 40px;
+    background-color: rgba(130, 210, 79, 1);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    color: #fff;
+    cursor:pointer;
+}
+/*
+====================================
+           New Webforms
+====================================
+*/
+
+
+[data-editable="webformNew"] {
+    position: absolute;
+    height: 185px;
+    width: 300px;
+}
+
+[data-editable="webformNew"] label,
+[data-editable="webformNew"] input[type="text"],
+[data-editable="webformNew"] textarea,
+[data-editable="webformNew"] button,
+[data-editable="webformNew"] select {
+    margin: 0;
+    display: inline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[data-editable="webformNew"] label,
+[data-editable="webformNew"] input[type="text"],
+[data-editable="webformNew"] textarea,
+[data-editable="webformNew"] select {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    color: #a1a9ad;
+    font-weight: normal;
+    font-style: normal;
+    cursor: pointer;
+}
+
+[data-editable="webformNewItem"].make-error-msg-visible {
+    z-index: 5;
+}
+
+[data-editable="webformNewItem"] [data-editable-item="field"],
+[data-editable="webformNewItem"] [data-editable-item="label"] {
+    box-sizing: border-box;
+}
+
+[data-editable="webformNewItem"] [data-editable-item="field"] {
+    position: absolute;
+}
+
+[data-editable="webformNewItem"] {
+    z-index: 4;/* Make webformNewItem higher than buttons so error messages will be displayed over them */
+    height:26px;
+    width:100%;
+}
+
+[data-editable-item="label"] {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    min-width: 10px;
+    min-height:20px;
+}
+
+[data-editable-item="label"],
+[data-editable-item="label"] .editable {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+[data-item-type="webform_radio"] [data-editable-item="field"] label {
+    display: block;
+}
+
+[data-item-type="webform_checkbox"] [data-editable-item="field"] label {
+    padding-left:20px;
+}
+
+[data-editable-item="label"] label {
+    position: relative;
+    min-width: 10px;
+    min-height:10px;
+}
+
+[data-editable="webformNew"] input[type="checkbox"] {
+    position: absolute;
+    margin-left: -20px;
+}
+
+[data-editable="webformNew"] input[type="text"],
+[data-editable="webformNew"] button,
+[data-editable="webformNew"] textarea,
+[data-editable="webformNew"] select {
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    border: 3px solid rgb(236, 240, 242);
+    background: rgb(255, 255, 255);
+    border-radius: 0;
+    font-style: normal;
+}
+
+[data-editable="webformNew"] input[type="text"] {
+    cursor: text;
+}
+
+[data-editable="webformNew"] textarea {
+    resize: none;
+}
+
+[data-editable="webformNew"] select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+
+[data-editable="webformNew"] form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+[data-editable="webformNew"][data-label-type="placeholder"] [data-editable-item="label"] {
+    z-index: 2;
+}
+
+[data-editable="webformNew"][data-label-type="placeholder"] [data-editable-item="item"] {
+    z-index: 1;
+}
+
+[data-editable="webformNew"] .field-blocker {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 10;
+}
+
+/*-----------------------------
+    DEFAULT BUTTON
+-----------------------------*/
+
+div[data-editable="webformNew"] button {
+    padding: 0;
+    border: none;
+    border-radius: 40px;
+    background-color: rgba(130, 210, 79, 1);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    cursor:pointer;
+    position: relative;
+}
+
+[data-editable="webformNew"] [contenteditable="true"] {
+    border:1px dotted black;
+}
+
+
+[data-editable="webformNew"] [data-item-type="webform_single_select"] [data-editable-item="field"]::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    top: -webkit-calc(50% - 2px);
+    top: calc(50% - 2px);
+    right: 10px;
+    display: inline-block;
+    border-color: #696969 transparent transparent transparent;
+    border-style: solid;
+    border-width: 6px;
+}
+
+/* Elements arrangement */
+[data-editable="webformNewItem"] .outer-editable,
+[data-editable="webformNewItem"] .editable {
+    overflow:hidden;
+}
+
+[data-editable="webformNewItem"] [data-editable-item="label"] {
+    position: relative;
+}
+
+[data-editable="webformNewItem"] [data-editable-item="field"] {
+    position: relative;
+}
+
+[data-editable="webformNewItem"][data-item-type="webform_checkbox"] [data-editable-item="field"] label {
+    display:block;
+}
+
+[data-label-type="placeholder"] [data-item-type="webform_text"] [data-editable-item="label"],
+[data-label-type="placeholder"] [data-item-type="webform_textarea"] [data-editable-item="label"] {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+
+[data-label-type="inline"] [data-item-type="webform_text"] [data-editable-item="label"],
+[data-label-type="inline"] [data-item-type="webform_text"] [data-editable-item="field"],
+[data-label-type="inline"] [data-item-type="webform_textarea"] [data-editable-item="label"],
+[data-label-type="inline"] [data-item-type="webform_textarea"] [data-editable-item="field"] {
+    float: left;
+    width:50%;
+}
+
+[data-editable="webformNew"] [data-editable-item="label"] label {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width:100%;
+}
+
+[data-editable="webformNew"] [data-editable-item="field"] input {
+    position: relative;
+    display: inline-block;
+}
+
+[data-editable="webformNew"] .column-resizer {
+    content: '';
+    position: absolute;
+    top:1px;
+    bottom:1px;
+    width:1px;
+    border:1px solid #3caeef;
+    border-width: 0 1px;
+    cursor: col-resize;
+    z-index: 11000; /* wiecej niz outer-editable na hoverze */
+    margin-left: -1px;
+    display:none;
+}
+
+[data-editable="webformNew"] .column-resizer:before,
+[data-editable="webformNew"] .column-resizer:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    top: -webkit-calc(50% - 6px);
+    top: calc(50% - 6px);
+    display: inline-block;
+    border-style: solid;
+    border-width: 6px;
+}
+
+[data-editable="webformNew"] .column-resizer:before {
+    border-color: transparent #3caeef transparent transparent;
+    right: 4px;
+}
+
+[data-editable="webformNew"] .column-resizer:after {
+    border-color: transparent transparent transparent #3caeef;
+    left:4px;
+}
+
+[data-label-type="inline"] [data-editable="webformNewItem"][data-item-type="webform_text"].selected-component .column-resizer,
+[data-label-type="inline"] [data-editable="webformNewItem"][data-item-type="webform_textarea"].selected-component .column-resizer{
+    display: block;
+}
+
+[data-editable="webformNewItem"] {
+    width:307px;
+}
+
+[data-editable="webformNewItem"],
+[data-editable="webformNewButton"],
+[data-editable="webformNewItem"] [data-editable-item="label"],
+[data-editable="webformNewItem"] [data-editable-item="field"] {
+    height:60px;
+}
+
+[data-editable="webformNewItem"][data-item-type="webform_checkbox"] [data-editable-item="field"],
+[data-editable="webformNewItem"][data-item-type="webform_textarea"] [data-editable-item="field"],
+[data-editable="webformNewItem"][data-item-type="webform_multi_select"] [data-editable-item="field"],
+[data-editable="webformNewItem"][data-item-type="webform_radio"] [data-editable-item="field"]{
+    height: auto;
+}
+
+[data-editable="webformNewButton"] {
+    width:213px;
+}
+
+/* Elements arrangement - end */
