@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Управленческий финансовый учет: система поддержки решений</title>
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <style>
+    .row.equal {
+      display: flex;
+      display: -webkit-flex;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+
+    .panel {
+      height: 100%;
+    }
+
+    h2 {
+      color: #870100 !important;
+    }
+
+    .countdown {
+      font-size: 1.5em;
+      box-shadow: 0px 2px #AAA;
+      background: #777;
+      /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(red, #870100);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(red, #870100);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(red, #870100);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(red, #870100);
+      /* Standard syntax */
+    }
+
+    .price-tag {
+      font-size: 2.5em;
+      color: #870100;
+      padding: 0;
+    }
+
+    .btn {
+      font-size: 0.8em;
+    }
+
+    .card {
+      font-size: 1.3em;
+    }
+
+    .card-title {
+      font-size: 1.7em;
+      color: #870100;
+    }
+
+    .programm {
+      line-height: 1.8em;
+    }
+
+    .countdown-title {
+      margin: -20px 0 10px 0;
+      font-size: 1.7em;
+    }
+
+    .date {
+      font-size: 1.3em;
+    }
+
+    .content {
+      margin: 0 0 10px 0;
+    }
+
+    .main-title {
+      margin-top: -20px;
+      margin-bottom: 5px;
+    }
+
+    .box {
+      margin-top: -30px;
+    }
+
+    .sub-title {
+      margin-bottom: 15px;
+    }
+
+    .vertical-align {
+      display: flex;
+      align-items: center;
+    }
+
+    .mk-program {
+      margin-top: 50px !important;
+    }
+
+    .mk-program2 {
+      margin-top: 0px !important;
+    }
+
+    .img-box {
+      padding-right: 20px !important;
+    }
+
+    .youtube-player {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <script>
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.11&appId=172848616127295';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <div class="container">
+    <!-- HEADER -->
+    <div class="row">
+      <div class="col-md-2">
+        <a href="https://iteam.ru/" target="_blank">
+          <img src="img/logo.png">
+        </a>
+      </div>
+      <div class="col-md-10">
+        <strong>МАСТЕРСКАЯ&nbsp;УПРАВЛЕНИЯ</strong>
+        <br>Консультируем и&nbsp;обучаем собственников и&nbsp;топ-менеджеров управлять компанией. С&nbsp;2002&nbsp;года
+      </div>
+    </div>
+    <hr>
+    <!-- CONTENT -->
+    <div class="row" style="margin-top:-20px;">
+      <div class="col-md-12 text-right">
+        <p class="sub-title" style="margin-bottom:25px;">
+          <span class="lead">
+            <strong>Бесплатный мастер-класс
+              <span class="label label-primary">онлайн</span>
+            </strong>
+          </span>
+        </p>
+        <h1 class="main-title">
+          <strong>Внедрение управленческого финансового учета: шаг за&nbsp;шагом</strong>
+        </h1>
+        <p class="sub-title">
+          <span class="lead">
+            <strong>Для собственников и&nbsp;топ-менеджеров компаний</strong>
+          </span>
+        </p>
+        <span class="label label-default date">
+          <strong>30&nbsp;ноября 2017 11-00 мск</strong>
+        </span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-sm-4 img-box">
+        <img class="img-responsive img-rounded box" src="img/mk_uchet.png">
+      </div>
+      <div class="col-md-8 col-sm-8">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <p class="panel-title">
+                  <span class="lead">
+                    <strong>Ведущий наставник&nbsp;&mdash; Александр Кочнев. Управляющий партнер консалтинговой компании iTeam.</strong>
+                  </span>
+                </p>
+              </div>
+              <div class="panel-body">
+                <p class="lead content">
+                  Пошаговый алгоритм проектирования и&nbsp;внедрения автоматизированной системы управленческого финансового учета.
+                </p>
+                <p class="lead content">
+                  <strong>Участники получат:</strong>
+                </p>
+                <ul class="lead content">
+                  <li>
+                    <strong>презентацию в&nbsp;формате PDF</strong>
+                  </li>
+                  <li>
+                    <strong>видеозапись мастер-класса</strong>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="countdown-title">
+          <div class="col-md-12">
+            <p class="countdown-title">
+              <strong>Мастер-класс начнётся через</strong>
+            </p>
+            <div id="countdown"></div>
+          </div>
+        </div>
+        <div class="row text-right" style="margin-top:-20px;">
+          <div class="col-md-12">
+            <p>
+              <strong class="price-tag">
+                <!-- <a class="btn btn-danger btn-lg" href="https://iteam.ru/SendComment/index">
+                  <strong>Получить материалы</strong>
+                </a> -->
+                <a class="btn btn-danger btn-lg scrollto" href="#ml2">
+                  <strong>УЧАСТВОВАТЬ</strong>
+                </a>
+              </strong>
+            </p>
+            <p>
+              <h4>
+                <a class="btn btn-default btn-lg scrollto" href="#d1">
+                  <strong>Скачать программу мастер-проекта по учёту</strong>
+                </a>
+              </h4>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h2 style="margin-bottom:-10px; margin-top:-10px;">
+          <strong>Никакой воды, все четко и&nbsp;по&nbsp;делу</strong>
+        </h2>
+      </div>
+    </div>
+
+    <div class="row equal vertical-align hidden-xs hidden-sm" style="margin-bottom:-30px;">
+      <div class="col-md-4">
+        <p>
+          <span class="lead card-title">
+            <strong>Делимся опытом</strong>
+          </span>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p>
+          <span class="lead card-title">
+            <strong>Учтём риски</strong>
+          </span>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p>
+          <span class="lead card-title">
+            <strong>Изучим ошибки</strong>
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row equal">
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body card">
+            <p class="hidden-md hidden-lg">
+              <span class="card-title">
+                <strong>Делимся опытом</strong>
+              </span>
+            </p>
+            <p>Поделимся практическим опытом проектов внедрения управленческого учета в&nbsp;разных сферах бизнеса.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-body card">
+            <p class="hidden-md hidden-lg">
+              <span class="card-title">
+                <strong>Учтём риски</strong>
+              </span>
+            </p>
+            <p>Обсудим задачи, которые предстоит решить и&nbsp;риски, характерные для каждого этапа проекта.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-body card">
+            <p class="hidden-md hidden-lg">
+              <span class="card-title">
+                <strong>Изучим ошибки</strong>
+              </span>
+            </p>
+            <p>Учиться стоит на&nbsp;чужом опыте. Разберем ошибки, которые часто допускают компании в&nbsp;таких проектах.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12" style="margin-top: 30px;">
+        <h2>
+          <strong>Программа мастер-класса:</strong>
+        </h2>
+        <p class="lead">На&nbsp;мастер-классе мы&nbsp;подробно рассмотрим каждый этап проекта внедрения системы управленческого финансового
+          учета:</p>
+        <ol class="lead programm">
+          <li>
+            <strong>Анализ текущего состояния управленческого финансового учета:</strong> выявление недостатков, определение требований
+            к&nbsp;системе учета. Формулирование целей проекта.
+          </li>
+          <li>
+            <strong>Описание структуры бизнеса для целей финансового учета:</strong> виды деятельности, процессы, сегменты рынка,
+            продукты, каналы сбыта и&nbsp;другие проекции бизнес-модели.
+          </li>
+          <li>
+            <strong>Разработка финансовой структуры компании:</strong> определение центров финансовой ответственности (ЦФО), описание
+            их&nbsp;зон ответственности и&nbsp;взаимоотношений ЦФО в&nbsp;системе управления.
+          </li>
+          <li>
+            <strong>Формирование структуры финансовых отчетов и&nbsp;бюджетов:</strong> определение состава статей доходов и&nbsp;расходов,
+            структуры активов и&nbsp;пассивов, форм бюджетов ЦФО.
+          </li>
+          <li>
+            <strong>Разработка методов учета доходов и&nbsp;расходов:</strong> учет продаж, производственных и&nbsp;коммерческих
+            расходов, распределение косвенных расходов.
+          </li>
+          <li>
+            <strong>Организация процессов формирования бюджета доходов и&nbsp;расходов,</strong> формирования отчетности об&nbsp;исполнении
+            бюджета.
+          </li>
+          <li>
+            <strong>Разработка методов учета основных средств,</strong> нематериальных активов, капитальных вложений, амортизации.
+          </li>
+          <li>
+            <strong>Разработка методики планирования и&nbsp;учета движения денежных средств,</strong> планирование и&nbsp;учет заемных
+            средств.
+          </li>
+          <li>
+            <strong>Организация процессов формирования итоговой финансовой отчетности,</strong> разработка регламента подведение
+            итогов и&nbsp;закрытия отчетного периода (месяца, квартала).
+          </li>
+          <li>
+            <strong>Разработка схем перекладки данных 1С&nbsp;для формирования оперативного учета и&nbsp;итоговой финансовой отчетности.</strong>
+          </li>
+          <li>
+            <strong>Выбор средств автоматизации.</strong> Разработка требований к&nbsp;автоматизации учета. Разработка информационной
+            архитектуры единого учетного пространства. Интеграция факт 1С&nbsp;&mdash; бюджет&nbsp;&mdash; производственное
+            планирование&nbsp;&mdash; служебные транзакции.
+          </li>
+          <li>
+            <strong>Организация проекта автоматизации учета:</strong> разработка плана проекта автоматизации, формирование команды
+            проекта, выбор исполнителей работ по&nbsp;автоматизации.
+          </li>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 col-sm-3">
+        <img class="img-responsive img-rounded" src="img/kochnev.jpg">
+      </div>
+      <div class="col-md-9 col-sm-9">
+        <h2>
+          <strong>Ведущий мастер-класса</strong>
+        </h2>
+        <h3>Александр Кочнев</h3>
+        <h4>Управляющий партнер консалтинговой компании iTeam.</h4>
+        <p class="lead">Специалист по&nbsp;управлению, организационному развитию. Кандидат технических наук. Более 15&nbsp;лет является Руководителем
+          консалтинговых проектов по&nbsp;разработке корпоративной стратегии, внедрению управленческого учета, оптимизации
+          процессов и&nbsp;организационной структуры, созданию систем планирования и&nbsp;контроллинга.</p>
+        <p>Разработал и&nbsp;провел более 100 мастер-классов и&nbsp;тренингов для собственников и&nbsp;руководителей компаний.</p>
+        <p>Автор более 200 статей и&nbsp;книг по&nbsp;различным аспектам управления организациями.</p>
+        <p>Создатель концепции &laquo;Русский Менеджмент&raquo;, как целостной системы знаний об&nbsp;управлении организациями.</p>
+      </div>
+    </div>
+
+    <div class="row text-center" id="ml2" style="margin-top: 20px;">
+      <div class="col-md-12">
+        <h2 style="margin-bottom:0;">
+          <strong>Чтобы зарегистрироваться, заполните заявку участника:</strong>
+        </h2>
+        <!-- <p style="margin: 30px 0;">
+            <strong class="price-tag">
+                <a class="btn btn-danger btn-lg" href="https://iteam.ru/SendComment/index">
+                  <strong>Получить материалы</strong>
+                </a>
+             </strong>
+        </p> -->
+        <p style="margin-bottom: -20px;">
+          ФОРМА GR
+        </p>
+      </div>
+    </div>
+
+    <div class="row text-center" id="d1" style="margin-top: 20px;">
+      <div class="col-md-12">
+        <h2 style="margin-bottom:0;">
+          <strong>Скачать программу мастер-проекта по учёту:</strong>
+        </h2>
+        <p style="margin-bottom: -20px;">
+          <!-- <strong class="price-tag">
+                  <a class="btn btn-danger btn-lg scrollto" href="Программа мастер проекта  лендинг учет.pdf" download>
+                    <strong>Скачайте подробную программу мастер-проекта</strong>
+                  </a>
+                </strong> -->
+          <script type="text/javascript" src="https://app.getresponse.com/view_webform_v2.js?u=Bh5z&webforms_id=6367706"></script>
+        </p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h2>
+          <strong>Отзывы наших участников:</strong>
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1 col-sm-2">
+        <img src="https://iteam.ru/landing/template/img/female_64.jpg" class="img-responsive img-circle">
+      </div>
+      <div class="col-md-11 col-sm-10">
+        <blockquote>
+          <h4>
+            <strong>Апатьева И.В. Владелец бизнеса</strong>
+          </h4>
+          <p>
+            Спасибо за&nbsp;интересный мастер-класс по&nbsp;управленческому учету. Понравилось то&nbsp;что рассмотрено на&nbsp;конкретных
+            примерах как финансовая оргструктура помогает получить вкусную информацию...
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1 col-sm-2">
+        <img src="https://iteam.ru/landing/template/img/female_64.jpg" class="img-responsive img-circle">
+      </div>
+      <div class="col-md-11 col-sm-10">
+        <blockquote>
+          <h4>
+            <strong>Ефимова И.А. Финансовый директор, ООО &laquo;Экспортер&raquo;</strong>
+          </h4>
+          <p>
+              В&nbsp;спокойной обстановке, без лишнего напряжения и&nbsp;к&nbsp;тому&nbsp;же от&nbsp;профессионала я&nbsp;получила нужную, полезную, сгруппированную информацию на&nbsp;обобщение которой сама потратила&nbsp;бы массу времени, которого и&nbsp;так катастрофически не&nbsp;хватает.
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1 col-sm-2">
+        <img src="https://iteam.ru/landing/template/img/male_64.jpg" class="img-responsive img-circle">
+      </div>
+      <div class="col-md-11 col-sm-10">
+        <blockquote>
+          <h4>
+            <strong>Беккер Е.С. Главный бухгалтер, ООО &laquo;ЧЕЛЯБАГРОСНАБ&raquo;</strong>
+          </h4>
+          <p>
+              Проблема очень актуальна, мы&nbsp;пока являемся новичками в&nbsp;этом деле и&nbsp;для нас очень важны такие мастер-классы. Материал излагается понятно и&nbsp;доступно, что дает нам возможность сразу применять полученные знания на&nbsp;практике.
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1 col-sm-2">
+        <img src="https://iteam.ru/landing/template/img/female_64.jpg" class="img-responsive img-circle">
+      </div>
+      <div class="col-md-11 col-sm-10">
+        <blockquote>
+          <h4>
+            <strong>Ибрагимова О.А. Управляющий, ООО &laquo;Либера&raquo;</strong>
+          </h4>
+          <p>
+              Последний раз управленческий финансовый учет я&nbsp;изучала в&nbsp;институте , есть понимание основной терминологии, но&nbsp;понимаю , что моих знаний недостаточно для занимаемой должности, поэтому постоянно нахожусь в&nbsp;поиске доступной для восприятия информации. На&nbsp;этом мастер-классе информация представлена очень доступно и&nbsp;хочется поделиться ей&nbsp;с&nbsp;персоналом, который ориентирован на&nbsp;продвижение по&nbsp;карьерной лестнице. Спасибо.
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1 col-sm-2">
+        <img src="https://iteam.ru/landing/template/img/male_64.jpg" class="img-responsive img-circle">
+      </div>
+      <div class="col-md-11 col-sm-10">
+        <blockquote>
+          <h4>
+            <strong>Касьянов С.В. Учредитель, ООО &laquo;Истли-сервис&raquo;</strong>
+          </h4>
+          <p>
+              Огромное Спасибо! Все очень понятно и&nbsp;доступно. Очень рад что присутствовал на&nbsp;данном мастер-классе. Я&nbsp;увидел какие ошибки допускал на&nbsp;протяжении всей своей работы. Теперь все будет по-другому. Упущенную прибыль не&nbsp;вернуть к&nbsp;сожалению, но&nbsp;благодаря Вам у&nbsp;меня открылись глаза. Еще раз Спасибо. Очень полезная информация.
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1 col-sm-2">
+        <img src="https://iteam.ru/landing/template/img/male_64.jpg" class="img-responsive img-circle">
+      </div>
+      <div class="col-md-11 col-sm-10">
+        <blockquote>
+          <h4>
+            <strong>Фроленков В.А. Генеральный директор, Юристлайн</strong>
+          </h4>
+          <p>
+              Спасибо большое за&nbsp;мастер-класс. Тема &laquo;Управленческий финансовый учет&raquo; очень актуальна, особенно для развивающихся компаний. Представленная Вами система поддержки решений понятна и&nbsp;практична.
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1 col-sm-2">
+        <img src="https://iteam.ru/landing/template/img/male_64.jpg" class="img-responsive img-circle">
+      </div>
+      <div class="col-md-11 col-sm-10">
+        <blockquote>
+          <h4>
+            <strong>Переверзев П.П. Профессор, Финансовый университет</strong>
+          </h4>
+          <p>
+              Мастер-класс проведен на&nbsp;высоком уровне. Как всегда прекрасно структурирована информация по&nbsp;такой расплывчатой теме, что позволяет формализовать бизнес-процессы управленческого учета и&nbsp;наметить дорожную карту их&nbsp;трансформации при переходе на&nbsp;цифровую экономику.
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1 col-sm-2">
+        <img src="https://iteam.ru/landing/template/img/male_64.jpg" class="img-responsive img-circle">
+      </div>
+      <div class="col-md-11 col-sm-10">
+        <blockquote>
+          <h4>
+            <strong>Дорофеев С.А. Руководитель центра, ОАО &laquo;РЖД&raquo;</strong>
+          </h4>
+          <p>
+              Очень полезный вебинар. Показана необходимость дифференцированного подхода к&nbsp;построению структуры финансового контроллинга, центров финансовой ответственности. При внедрении рекомендаций будет заложен еще один кирпичек в&nbsp;построение фундамента системы управления бизнесом
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1 col-sm-2">
+        <img src="https://iteam.ru/landing/template/img/female_64.jpg" class="img-responsive img-circle">
+      </div>
+      <div class="col-md-11 col-sm-10">
+        <blockquote>
+          <h4>
+            <strong>Михайлишин Оксана, спеціаліст по&nbsp;корпоративним продажам, УкрСибБанк</strong>
+          </h4>
+          <p>
+              Спасибо за&nbsp;хороший мастер-класс по&nbsp;управленческому учету. Мне, как специалисту по&nbsp;кредитованию теперь значительно легче &laquo;копаться&raquo; в&nbsp;управленке потенциальных заемщиков
+          </p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="fb-comments" data-href="https://iteam.ru/landing/template/fin-uchet-vnedrenie.html" data-width="100%" data-numposts="10"></div>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h3>Мы&nbsp;с&nbsp;удовольствием ответим на&nbsp;все ваши вопросы:</h3>
+        <h3>
+          <a href="mailto:info@iteam.ru">info@iteam.ru</a>
+        </h3>
+        <h3>+7 (499) 110 26 84</h3>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <div class="row">
+      <div class="col-md-4">
+        <a href="https://iteam.ru/" target="_blank">
+          <img src="img/logo.png">
+        </a>
+        <p class="features">&copy;&nbsp;2002&nbsp;&mdash; 2017 iTeam Москва, Пресненская наб.&nbsp;12</p>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline">
+          <li class="text-footer">
+            <a href="https://www.facebook.com/ITeam-Management-1538687959484919/">
+              <img src="img/facebook.png">
+            </a>
+          </li>
+          <li class="text-footer">
+            <a href="https://vk.com/public150574411">
+              <img src="img/vk.png">
+            </a>
+          </li>
+          <li class="text-footer">
+            <a href="https://www.instagram.com/iteamanagement/">
+              <img src="img/instagram.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <a href="https://iteam.ru/company/terms">Пользовательское соглашение</a>
+        <br>
+        <a href="https://iteam.ru/company/offer">Реквизиты</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Nov 30, 2017 10:59:59").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+      // Get todays date and time
+      var now = new Date().getTime();
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      var allHours = days * 24 + hours;
+      // Display the result in the element with id="countdown"
+      // days + " д. " + " : " +
+      document.getElementById("countdown").innerHTML = "<span class='label label-warning countdown'>" + days + "&nbsp;д" + "</span>" + "<span class='lead'><strong>&nbsp;:&nbsp;</strong></span>" + "<span class='label label-warning countdown'>" + hours + "&nbsp;ч" + "</span>" + "<span class='lead'><strong>&nbsp;:&nbsp;</strong></span>" + "<span class='label label-warning countdown'>" + minutes + "&nbsp;мин" + "</span>" + "<span class='lead'><strong>&nbsp;:&nbsp;</strong></span>" + "<span class='label label-warning countdown'>" + seconds + "&nbsp;сек" + "</span>";
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown-title").style.display = "none";
+      }
+    }, 1000);
+
+    $(document).ready(function () {
+      $("a.scrollto").click(function () {
+        var elementClick = $(this).attr("href")
+        var destination = $(elementClick).offset().top;
+        jQuery("html:not(:animated),body:not(:animated)").animate({
+          scrollTop: destination
+        }, 1500);
+        return false;
+      });
+    });
+  </script>
+</body>
+
+</html>
